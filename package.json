@@ -1,9 +1,9 @@
 {
     "name": "eradiumlauncherv2",
-    "version": "2.2.1",
+    "version": "0.0.1",
     "productName": "Eradium Launcher",
     "description": "Modded Minecraft Launcher",
-    "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+    "author": "Daniel Scalzi (https://github.com/DarkShoro/)",
     "license": "UNLICENSED",
     "homepage": "https://github.com/DarkShoro/EradiumLauncherV2",
     "bugs": {
@@ -46,6 +46,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+        "url": "git+https://github.com/DarkShoro/EradiumLauncherV2.git"
     }
 }

@@ -43,29 +43,9 @@
                         <button class="settingsAddAuthAccount" id="settingsAddMicrosoftAccount"><%- lang('settings.addMicrosoftAccount') %></button>
                     </div>
                 </div>
-                
+
                 <div class="settingsCurrentAccounts" id="settingsCurrentMicrosoftAccounts">
                     <!-- Microsoft auth accounts populated here. -->
-                </div>
-            </div>
-
-            <div class="settingsAuthAccountTypeContainer">
-                <div class="settingsAuthAccountTypeHeader">
-                    <div class="settingsAuthAccountTypeHeaderLeft">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 9.677 9.667">
-                            <path d="M-26.332-12.098h2.715c-1.357.18-2.574 1.23-2.715 2.633z" fill="#fff" />
-                            <path d="M2.598.022h7.07L9.665 7c-.003 1.334-1.113 2.46-2.402 2.654H0V2.542C.134 1.2 1.3.195 2.598.022z" fill="#db2331" />
-                            <path d="M1.54 2.844c.314-.76 1.31-.46 1.954-.528.785-.083 1.503.272 2.1.758l.164-.9c.327.345.587.756.964 1.052.28.254.655-.342.86-.013.42.864.408 1.86.54 2.795l-.788-.373C6.9 4.17 5.126 3.052 3.656 3.685c-1.294.592-1.156 2.65.06 3.255 1.354.703 2.953.51 4.405.292-.07.42-.34.87-.834.816l-4.95.002c-.5.055-.886-.413-.838-.89l.04-4.315z" fill="#fff" />
-                        </svg>
-                        <span><%- lang('settings.mojangAccount') %></span>
-                    </div>
-                    <div class="settingsAuthAccountTypeHeaderRight">
-                        <button class="settingsAddAuthAccount" id="settingsAddMojangAccount"><%- lang('settings.addMojangAccount') %></button>
-                    </div>
-                </div>
-                
-                <div class="settingsCurrentAccounts" id="settingsCurrentMojangAccounts">
-                    <!-- Mojang auth accounts populated here. -->
                 </div>
             </div>
         </div>
@@ -134,31 +114,43 @@
             </div>
             <div id="settingsModsContainer">
                 <div id="settingsReqModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.requiredMods') %></div>
+                    <div class="settingsModsHeader">
+                        <%- lang('settings.requiredMods') %>
+                    </div>
                     <div id="settingsReqModsContent">
 
                     </div>
                 </div>
                 <div id="settingsOptModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.optionalMods') %></div>
+                    <div class="settingsModsHeader">
+                        <%- lang('settings.optionalMods') %>
+                    </div>
                     <div id="settingsOptModsContent">
-                        
+
                     </div>
                 </div>
                 <div id="settingsDropinModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.dropinMods') %></div>
+                    <div class="settingsModsHeader">
+                        <%- lang('settings.dropinMods') %>
+                    </div>
                     <button id="settingsDropinFileSystemButton"><%- lang('settings.addMods') %> <span id="settingsDropinRefreshNote"><%- lang('settings.dropinRefreshNote') %></span></button>
                     <div id="settingsDropinModsContent">
-                        
+
                     </div>
                 </div>
                 <div id="settingsShadersContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.shaderpacks') %></div>
-                    <div id="settingsShaderpackDesc"><%- lang('settings.shaderpackDesc') %></div>
+                    <div class="settingsModsHeader">
+                        <%- lang('settings.shaderpacks') %>
+                    </div>
+                    <div id="settingsShaderpackDesc">
+                        <%- lang('settings.shaderpackDesc') %>
+                    </div>
                     <div id="settingsShaderpackWrapper">
                         <button id="settingsShaderpackButton"> + </button>
                         <div class="settingsSelectContainer">
-                            <div class="settingsSelectSelected" id="settingsShadersSelected"><%- lang('settings.selectShaderpack') %></div>
+                            <div class="settingsSelectSelected" id="settingsShadersSelected">
+                                <%- lang('settings.selectShaderpack') %>
+                            </div>
                             <div class="settingsSelectOptions" id="settingsShadersOptions" hidden>
 
                             </div>
@@ -183,7 +175,9 @@
                 </div>
             </div>
             <div id="settingsMemoryContainer">
-                <div id="settingsMemoryTitle"><%- lang('settings.memoryTitle') %></div>
+                <div id="settingsMemoryTitle">
+                    <%- lang('settings.memoryTitle') %>
+                </div>
                 <div id="settingsMemoryContent">
                     <div id="settingsMemoryContentLeft">
                         <div class="settingsMemoryContentItem">
@@ -206,7 +200,9 @@
                                 <span id="settingsMinRAMLabel" class="settingsMemoryLabel">3G</span>
                             </div>
                         </div>
-                        <div id="settingsMemoryDesc"><%- lang('settings.memoryDesc') %></div>
+                        <div id="settingsMemoryDesc">
+                            <%- lang('settings.memoryDesc') %>
+                        </div>
                     </div>
                     <div id="settingsMemoryContentRight">
                         <div id="settingsMemoryStatus">
@@ -223,9 +219,13 @@
                 </div>
             </div>
             <div class="settingsFileSelContainer">
-                <div class="settingsFileSelTitle"><%- lang('settings.javaExecutableTitle') %></div>
+                <div class="settingsFileSelTitle">
+                    <%- lang('settings.javaExecutableTitle') %>
+                </div>
                 <div class="settingsFileSelContent">
-                    <div id="settingsJavaExecDetails"><!-- Invalid Selection --></div>
+                    <div id="settingsJavaExecDetails">
+                        <!-- Invalid Selection -->
+                    </div>
                     <div class="settingsFileSelActions">
                         <div class="settingsFileSelIcon">
                             <svg class="settingsFileSelSVG" x="0px" y="0px" viewBox="0 0 305.001 305.001">
@@ -245,10 +245,15 @@
                         <button class="settingsFileSelButton" id="settingsJavaExecSel" dialogTitle="<%- lang('settings.javaExecSelDialogTitle') %>" dialogDirectory="false"><%- lang('settings.javaExecSelButtonText') %></button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc"><%- lang('settings.javaExecDesc') %> <strong id="settingsJavaReqDesc"><!-- Requires Java 8 x64. --></strong><br><%- lang('settings.javaPathDesc', {'pathSuffix': `bin${process.platform === 'win32' ? '\\javaw.exe' : '/java'}`}) %></div>
+                <div class="settingsFileSelDesc">
+                    <%- lang('settings.javaExecDesc') %> <strong id="settingsJavaReqDesc"><!-- Requires Java 8 x64. --></strong><br>
+                        <%- lang('settings.javaPathDesc', {'pathSuffix': `bin${process.platform === 'win32' ? '\\javaw.exe' : '/java'}`}) %>
+                </div>
             </div>
             <div id="settingsJVMOptsContainer">
-                <div id="settingsJVMOptsTitle"><%- lang('settings.jvmOptsTitle') %></div>
+                <div id="settingsJVMOptsTitle">
+                    <%- lang('settings.jvmOptsTitle') %>
+                </div>
                 <div id="settingsJVMOptsContent">
                     <div class="settingsFileSelIcon">
                         <svg class="settingsFileSelSVG" x="0px" y="0px" viewBox="0 0 305.001 305.001">
@@ -266,7 +271,12 @@
                     </div>
                     <input id="settingsJVMOptsVal" cValue="JVMOptions" serverDependent type="text">
                 </div>
-                <div id="settingsJVMOptsDesc"><%- lang('settings.jvmOptsDesc') %><br><a href="#" id="settingsJvmOptsLink"><!-- Available Options --></a></div>
+                <div id="settingsJVMOptsDesc">
+                    <%- lang('settings.jvmOptsDesc') %><br>
+                        <a href="#" id="settingsJvmOptsLink">
+                            <!-- Available Options -->
+                        </a>
+                </div>
             </div>
         </div>
         <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
@@ -288,7 +298,9 @@
             </div>
             <div class="settingsFileSelContainer">
                 <div class="settingsFileSelContent">
-                    <div class="settingsFieldTitle" id="settingsDataDirTitle"><%- lang('settings.dataDirectoryTitle') %></div>
+                    <div class="settingsFieldTitle" id="settingsDataDirTitle">
+                        <%- lang('settings.dataDirectoryTitle') %>
+                    </div>
                     <div class="settingsFileSelActions">
                         <div class="settingsFileSelIcon">
                             <svg class="settingsFileSelSVG">
@@ -303,7 +315,9 @@
                         <button class="settingsFileSelButton" dialogTitle="<%- lang('settings.selectDataDirectory') %>" dialogDirectory="true"><%- lang('settings.chooseFolder') %></button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc"><%- lang('settings.dataDirectoryDesc') %></div>
+                <div class="settingsFileSelDesc">
+                    <%- lang('settings.dataDirectoryDesc') %>
+                </div>
             </div>
         </div>
         <div id="settingsTabAbout" class="settingsTab" style="display: none;">
@@ -329,25 +343,37 @@
                     </div>
                 </div>
                 <div id="settingsAboutButtons">
-                    <a href="<%- lang('settings.sourceGithubLink') %>" id="settingsAboutSourceButton" class="settingsAboutButton"><%- lang('settings.sourceGithub') %></a>
+                    <a href="<%- lang('settings.sourceGithubLink') %>" id="settingsAboutSourceButton" class="settingsAboutButton">
+                        <%- lang('settings.sourceGithub') %>
+                    </a>
                     <!-- The following must be included in third-party usage. -->
-                    <!-- <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
-                    <a href="<%- lang('settings.supportLink') %>" id="settingsAboutSupportButton" class="settingsAboutButton"><%- lang('settings.support') %></a>
-                    <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton"><%- lang('settings.devToolsConsole') %></a>
+                    <!-- <a href="https://github.com/DarkShoro/EradiumLauncherV2" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
+                    <a href="<%- lang('settings.supportLink') %>" id="settingsAboutSupportButton" class="settingsAboutButton">
+                        <%- lang('settings.support') %>
+                    </a>
+                    <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton">
+                        <%- lang('settings.devToolsConsole') %>
+                    </a>
                 </div>
             </div>
             <div class="settingsChangelogContainer">
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
-                        <div class="settingsChangelogLabel"><%- lang('settings.releaseNotes') %></div>
-                        <div class="settingsChangelogTitle"><%- lang('settings.changelog') %></div>
+                        <div class="settingsChangelogLabel">
+                            <%- lang('settings.releaseNotes') %>
+                        </div>
+                        <div class="settingsChangelogTitle">
+                            <%- lang('settings.changelog') %>
+                        </div>
                     </div>
                     <div class="settingsChangelogText">
                         <%- lang('settings.noReleaseNotes') %>
                     </div>
                 </div>
                 <div class="settingsChangelogActions">
-                    <a class="settingsChangelogButton settingsAboutButton" href="#"><%- lang('settings.viewReleaseNotes') %></a>
+                    <a class="settingsChangelogButton settingsAboutButton" href="#">
+                        <%- lang('settings.viewReleaseNotes') %>
+                    </a>
                 </div>
             </div>
         </div>
@@ -379,8 +405,12 @@
             <div class="settingsChangelogContainer">
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
-                        <div class="settingsChangelogLabel"><%- lang('settings.whatsNew') %></div>
-                        <div class="settingsChangelogTitle"><%- lang('settings.updateReleaseNotes') %></div>
+                        <div class="settingsChangelogLabel">
+                            <%- lang('settings.whatsNew') %>
+                        </div>
+                        <div class="settingsChangelogTitle">
+                            <%- lang('settings.updateReleaseNotes') %>
+                        </div>
                     </div>
                     <div class="settingsChangelogText">
                         <%- lang('settings.noReleaseNotes') %>
